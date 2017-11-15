@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitch API App</title>
+  <!-- IMPORT BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <!-- IMPORT jQuery 3 -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="col-md-2"></div>
+
+    <!-- MAIN BOX -->
+    <div id="main-box" class="well col-md-8">
+
+      <!-- TITLE AND TWITCH LOGO -->
+      <div class="top-section col-md-12">
+
+        <div class="title col-md-8">
+          <img src="twitchlogo.svg" class="twitchLogo col-md-6" />
+          <h1 class="col-md-6">STREAMERS</h1>
+        </div>
+
+          <ul class="online-status col-md-4">
+            <button class="btn btn-primary" id="selectAll">All</button>
+            <button class="btn btn-success" id="selectOnline">Online</button>
+            <button class="btn btn-danger" id="selectOffline">Offline</button>
+          </ul>
+
+      </div>
+      <!-- /END TITLE AND TWITCH LOGO -->
+
+      <!-- STREAMERS LIST -->
+      <ul id="streamers" class="col-md-12">
+
+      </ul>
+      <!-- /END STREAMERS LIST -->
+
+      <div class="author">
+        Coded by <a href="https://www.github.com/krimou32" target="_blank">Karim Bel Hadj</a>.
+      </div>
+
+    </div>
+    <!-- /END MAIN BOX -->
+  </div>
+
+  <!-- FOOTER SCRIPTS -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
